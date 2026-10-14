@@ -1,42 +1,48 @@
 # Olist E-Commerce Analysis
 
-> **Status:** In Progress
-
 ## About the Project
 
-This is a Python and Pandas project using the Olist Brazilian e-commerce dataset.
+This project uses the Olist Brazilian e-commerce dataset to practice working with real-world data using Python and Pandas.
 
-I am using this project to practice working with a real-world dataset and improve my data analysis skills. The main focus is on exploring the data, checking for data quality issues, analyzing order and delivery information, and later calculating useful business metrics.
+I explored order and order-item data, checked for data quality issues, analyzed delivery performance and monthly order trends, and combined datasets to calculate order values.
 
 ## Tools Used
 
 - Python
 - Pandas
+- Matplotlib
 - Jupyter Notebook
 - VS Code
 - Git and GitHub
 
-## What I Have Done So Far
+## What I Did
 
-- Loaded and explored the orders dataset
-- Checked the number of rows and columns
-- Checked for missing values
-- Looked at the different order statuses
-- Checked for duplicate order IDs
-- Investigated delivered orders with missing delivery dates
+- Explored the orders dataset
+- Checked for missing values and duplicate order IDs
+- Investigated unusual delivery records
+- Converted date columns to datetime format
+- Calculated delivery times and delivery delays
+- Analyzed late deliveries and extreme delivery times
+- Analyzed monthly order volume
+- Explored the order items dataset
+- Checked prices and freight values
+- Calculated total order values
+- Combined order and order-item data using `order_id`
+- Analyzed monthly order value
+- Created visualizations for delivery delays and monthly trends
 
-## What I Plan to Do Next
+## Key Findings
 
-- Clean and prepare the data
-- Work with more of the Olist datasets
-- Analyze order and sales trends
-- Analyze delivery performance
-- Calculate business metrics
-- Create visualizations
-- Summarize the main findings
+- Average delivery time was about 12 days, with a median of 10 days.
+- About 6.8% of orders with delivery information arrived later than their estimated delivery date.
+- Among late orders, the median delay was 7 days.
+- Monthly order volume grew strongly during 2017 and remained relatively stable through most of 2018.
+- Monthly order value followed a similar pattern and reached over 1 million during several months.
+- Very low order counts near the end of the dataset suggest that the final months may contain incomplete data.
 
 ## Dataset
 
 This project uses the public Olist Brazilian E-Commerce dataset.
 
 The raw CSV files are not included in this repository.
+
